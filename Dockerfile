@@ -1,4 +1,5 @@
 FROM ubuntu:bionic-20200219
+RUN apt-get update && apt-get install -y openssh-client
 
 ARG ANSIBLE_VERSION="2.10"
 
